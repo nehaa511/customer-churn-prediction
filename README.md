@@ -12,12 +12,13 @@ IBM Telco Customer Churn dataset (7043 customers, 33 columns).
 - One-hot encoding, train-test split (80/20, stratified), scaling
 - Baseline model: Logistic Regression with balanced class weights
 
-## Results (Logistic Regression)
-| Metric | Value |
-|---|---|
-| Accuracy | 0.74 |
-| Recall (churn) | 0.78 |
-| Precision (churn) | 0.51 |
+## Results
+| Model | Accuracy | Precision (churn) | Recall (churn) | F1 (churn) |
+|---|---|---|---|---|
+| Logistic Regression | 0.74 | 0.51 | 0.78 | 0.62 |
+| Random Forest | 0.80 | 0.65 | 0.51 | 0.57 |
+
+Random Forest has higher accuracy, but Logistic Regression catches more churners (recall 0.78 vs 0.51). Since missing a churning customer is costly, Logistic Regression is the better fit here.
 
 ## Key insights
 - About 27% of customers churned (class imbalance)
