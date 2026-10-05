@@ -31,3 +31,11 @@ Python, pandas, matplotlib, seaborn, scikit-learn
 ## Next steps
 - Random Forest and XGBoost comparison
 - Hyperparameter tuning
+
+  ## Key drivers of churn (Random Forest feature importance)
+Top features: Total Charges, Tenure Months, Monthly Charges, Contract type, Dependents, Fiber optic internet and Electronic check payment.
+
+- Tenure and billing amounts together make up about half of the total importance.
+- Contract type is a strong signal (consistent with the EDA: month-to-month customers churn more).
+- Gender appears in the top 10 but is likely noise, not a real driver.
+- Note: feature importance shows how much a feature matters, not the direction of its effect.
